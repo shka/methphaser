@@ -152,7 +152,7 @@ def get_altered_block_start_loc(final_blocks, original_block_start_loc):
     for i in final_blocks:
         if original_block_start_loc <= i[1] and original_block_start_loc >= i[0]:
             return str(i[0])
-    return -1
+    return str(-1)
 
 
 def get_all_final_blocks_dict(block_relationship_df):
